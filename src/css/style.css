@@ -1,0 +1,66 @@
+/*=========================*/
+/*         VARIABLES       */
+/*=========================*/
+
+:root {
+
+    /* Primary */
+    --green-500: #1db489;
+    --red-500: #dc414c;
+
+    --blue-600-facebook: #198ef5;
+    --blue-500-twitter: #1ca0f2;
+
+    /* Instagram gradient stops */
+    --instagram-stop-1: #fdc468;
+    --instagram-stop-2: #ee867c;
+    --instagram-stop-3: #df4996;
+    --gradient-instagram: linear-gradient(45deg, var(--instagram-stop-1), var(--instagram-stop-2), var(--instagram-stop-3));
+
+    --red-700-youtube: #c4032a;
+
+    /* Toggle - Dark Theme */
+    --toggle-gradient-stop-1-dark: #368fe7;
+    --toggle-gradient-stop-2-dark: #3eda82;
+    --gradient-toggle-dark: linear-gradient(45deg, var(--toggle-gradient-stop-1-dark), var(--toggle-gradient-stop-2-dark));
+
+    /* Toggle - Light Theme */
+    --gray-400-toggle-light: #aeb3cb;
+
+    /* Neutral - Dark Theme */
+    --gray-950-bg-dark: #1e202a;
+    --gray-900-top-bg-pattern-dark: #1f212e;
+    --navy-950-card-bg-dark: #252a41;
+    --gray-400-text-dark: #aeb3cb;
+    --white-text-dark: #ffffff;
+
+    /* Neutral - Light Theme */
+    --white-bg-light: #ffffff;
+    --blue-50-top-bg-pattern-light: #f5f7ff;
+    --navy-50-card-bg-light: #f0f2fa;
+    --gray-650-text-light: #63687e;
+    --gray-950-text-light: #1e202a;
+
+    --font-primary: 'Inter', Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*=========================*/
+/*          GERALS         */
+/*=========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100dvh;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 400;
+}
