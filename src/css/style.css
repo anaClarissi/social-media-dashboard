@@ -377,3 +377,36 @@ p {
 .card-percentage.small::before {
     content: url('/src/assets/images/icon-down.svg');
 }
+
+
+/*===============================*/
+/*        ---- TABLET ----       */
+/*===============================*/
+
+@media (min-width: 48em) {
+    
+    /*=========================*/
+    /*          HEADER         */
+    /*=========================*/
+
+    .primary-section {
+        gap: 2rem;
+    }
+
+    .header-content {
+        padding-bottom: 2rem;
+    }
+
+    .secondary-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*=========================*/
+    /*           MAIN          */
+    /*=========================*/
+
+    .overview-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
