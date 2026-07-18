@@ -71,6 +71,10 @@ body .container {
     padding: 1.5rem;
 }
 
+p {
+    margin: 0;
+}
+
 .card {
     font-size: 0.875rem;
     font-weight: 400;
@@ -209,4 +213,87 @@ body .container {
 
 .secondary-section .card-footer.small {
     color: var(--red-500);
+}
+
+
+/*=========================*/
+/*           MAIN          */
+/*=========================*/
+
+.overview-section .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.overview-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.overview-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.social-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.overview-cards .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-weight: 700;
+}
+
+.card-primary-content,
+.card-secondary-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.card-primary-content {
+    align-items: flex-start;
+}
+
+.card-secondary-content {
+    align-items: flex-end;
+}
+
+.card-primary-content .title {
+    font-size: 0.875rem;
+}
+
+.card-primary-content .subtitle {
+    font-size: 2.25rem;
+    line-height: 1.5rem;
+}
+
+.card-percentage {
+    display: flex;
+    color: var(--green-500);
+}
+
+.card-percentage::before {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 1rem;
+    height: 1rem;
+    content: url('/src/assets/images/icon-up.svg');
+}
+
+.card-percentage.small {
+    color: var(--red-500);
+}
+
+.card-percentage.small::before {
+    content: url('/src/assets/images/icon-down.svg');
 }
