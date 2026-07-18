@@ -410,3 +410,77 @@ p {
     }
 
 }
+
+
+/*===============================*/
+/*       ---- DESKTOP ----       */
+/*===============================*/
+
+@media (min-width: 80em) {
+    
+    /*=========================*/
+    /*          HEADER         */
+    /*=========================*/
+
+    .bg-color {
+        height: 75%;
+    }
+
+    .primary-section {
+        padding: 1rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-content {
+        padding-bottom: 0;
+        border-bottom: none;
+        flex-grow: 2;
+    }
+
+    .header-content .title {
+        font-size: clamp(1.5rem, calc(-2.5rem + 5vw), 2.5rem);
+    }
+
+    .form-switch {
+        flex-grow: 1;
+        justify-content: flex-end;
+        gap: 4rem;
+    }
+
+    .secondary-section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /*=========================*/
+    /*           MAIN          */
+    /*=========================*/
+
+    .overview-section .title {
+        font-size: clamp(1.250rem, calc(-4.750rem + 7.5vw), 2.000rem);
+    }
+
+    .overview-section .subtitle {
+        font-size: clamp(2.250rem, calc(-1.750rem + 5vw), 2.750rem);
+    }
+
+    .overview-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+
+    .overview-cards .card {
+        padding: clamp(1.500rem, calc(-2.500rem + 5vw), 2.000rem);
+    }
+
+    .card-primary-content,
+    .card-secondary-content {
+        gap: clamp(1.500rem, calc(-2.500rem + 5vw), 2.000rem);
+    }
+    
+    .card-primary-content .title {
+        font-size: clamp(0.875rem, calc(-0.125rem + 1.25vw), 1.000rem);
+    }
+
+}
