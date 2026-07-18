@@ -33,6 +33,7 @@
     --navy-950-card-bg-dark: #252a41;
     --gray-400-text-dark: #aeb3cb;
     --white-text-dark: #ffffff;
+    --gray-925-card-hover-bg-dark: #333A56;
 
     /* Neutral - Light Theme */
     --white-bg-light: #ffffff;
@@ -40,6 +41,7 @@
     --navy-50-card-bg-light: #f0f2fa;
     --gray-650-text-light: #63687e;
     --gray-950-text-light: #1e202a;
+    --gray-250-card-hover-bg-light: #E1E3F0;
 
 
     /* DARK THEME */
@@ -52,6 +54,7 @@
     --followers-color: var(--white-text-dark);
     --card-title-color: var(--gray-400-text-dark);
     --card-likes-color: var(--white-text-dark);
+    --card-hover-bg-color: var(--gray-925-card-hover-bg-dark);
 
     --font-primary: 'Inter', Arial, Helvetica, sans-serif;
 
@@ -73,6 +76,7 @@
     --followers-color: var(--gray-950-text-light);
     --card-title-color: var(--gray-650-text-light);
     --card-likes-color: var(--gray-950-text-light);
+    --card-hover-bg-color: var(--gray-250-card-hover-bg-light);
 }
 
 * {
@@ -105,6 +109,13 @@ p {
     border: none;
     color: var(--text-color);
     background-color: var(--card-bg-color);
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.card:hover,
+.card:focus {
+    background-color: var(--card-hover-bg-color);
 }
 
 .card-header,
@@ -185,10 +196,16 @@ p {
     height: 1.5rem;
     background: var(--gradient-toggle-dark);
     border: none;
+    cursor: pointer;
 }
 
 #switch:checked {
     background: var(--gray-400-toggle-light);
+}
+
+#switch:checked:hover,
+#switch:checked:focus-within {
+    background: var(--gradient-toggle-dark);
 }
 
 #switch::after {
